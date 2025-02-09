@@ -6,7 +6,7 @@ import random
 
 
 def determine_score_status(score):
-    """Determine the status of a given score."""
+    """Determine the status of the score"""
     if score < 0 or score > 100:
         return "Invalid score"
     elif score > 89:
@@ -18,7 +18,7 @@ def determine_score_status(score):
 
 
 def main():
-    """Main function to get user input and determine score status."""
+    """Main function to enter score and determine the status"""
     score = float(input("Enter score: "))
     print(determine_score_status(score))
 
