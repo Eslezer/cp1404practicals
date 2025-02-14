@@ -14,5 +14,4 @@ while sales > 0:
         bonus = sales * 0.15
         print(f'You are awarded a bonues of ${bonus}')
         sales = float(input("Enters sales... $"))
-else:
-    print("Invalid input")
+print("Invalid input")
