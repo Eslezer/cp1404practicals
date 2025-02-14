@@ -1,5 +1,9 @@
-"""Password Length check"""
+"""
+CP1404/CP5632 - Practical
+password_stars.py
 
+length checker and print the length of stars
+"""
 min_length = 10
 
 
