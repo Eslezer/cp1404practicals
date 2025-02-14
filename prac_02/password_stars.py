@@ -12,13 +12,14 @@ def main():
 
 def do_check(pass_length):
     """Length is checked to be 10 characters or more"""
-    if pass_length < min_length:
+    if pass_length > min_length:
+        print("correct")
         for i in range(pass_length):
             print("*", end="")
+    else:
         print("\ninvalid length")
         main()
 
 
 main()
-print("correct")
 
