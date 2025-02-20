@@ -1,3 +1,8 @@
+"""
+CP1404/CP5632 - Practical
+Creating menu for a program
+"""
+
 name = input("What's your name?... ")
 print('(H)ello\n(G)oodbye\n(Q)uit')
 choice = input()
