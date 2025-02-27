@@ -1,3 +1,9 @@
+"""
+CP1404/CP5632 Practical
+Quick pick generator
+"""
+
+
 import random
 
 MIN_NUMBER = 1
