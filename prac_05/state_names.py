@@ -43,3 +43,4 @@ while state_code != "":
 print("\nAll states:")
 for code, name in CODE_TO_NAME.items():
     print(f"{code:3} is {name}")
+
