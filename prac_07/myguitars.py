@@ -1,3 +1,9 @@
+"""
+CP1404/CP5632 Practical
+Guitar program to store and read guitar's details
+"""
+
+
 import csv
 from guitar import Guitar
 

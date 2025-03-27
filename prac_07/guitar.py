@@ -1,6 +1,10 @@
 """
-Estimate: 6 minutes
-Actual: 5 minutes
+CP1404/CP5632 Practical
+Functions and classes for guitar program
+
+
+Estimate: 5 minutes
+Actual: 3 minutes
 """
 
 
