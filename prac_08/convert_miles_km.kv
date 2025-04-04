@@ -1,0 +1,58 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    # top section
+    BoxLayout:
+        orientation: 'horizontal'
+        TextInput:
+            id: input_miles
+            text: '34'
+            font_size: 48
+            multiline: False
+            on_text: app.handle_calculate(self.text)
+
+        # up and down buttons
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_x: 0.25
+            Button:
+                text: 'Up'
+                on_press: app.handle_increment(input_miles.text, 1)
+                background_color: (0.5, 0.5, 0.5, 1)  # Dark gray
+                color: (1, 1, 1, 1)  # White text
+            Button:
+                text: 'Down'
+                on_press: app.handle_increment(input_miles.text, -1)
+                background_color: (0.5, 0.5, 0.5, 1)  # Dark gray
+                color: (1, 1, 1, 1)  # White text
+
+    # convert button
+    # Button:
+    #     text: 'Convert miles to km'
+    #     on_press: app.handle_calculate(input_miles.text)
+    #     background_color: (0.5, 0.5, 0.5, 1)  # Dark gray
+    #     color: (1, 1, 1, 1)  # White text
+
+    # label instead of the button since it commented out
+    Label:
+        text: 'Convert miles to km'
+        background_color: (0.5, 0.5, 0.5, 1)  # Dark gray
+        color: (1, 1, 1, 1)  # White text
+        canvas.before:
+            Color:
+                rgba: 0.5, 0.5, 0.5, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+    # Bottom section - Output label
+    Label:
+        text: app.output_km
+        font_size: 48
+        color: (1, 1, 0, 1)  # Yellow text
+        canvas.before:
+            Color:
+                rgba: 0, 0, 0, 1  # Black background
+            Rectangle:
+                pos: self.pos
+                size: self.size

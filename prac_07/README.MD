@@ -14,7 +14,7 @@ Clean Code Lessons Learned
 
 Useful Links
 
-[Programming Patterns]()
+[Programming Patterns](https://github.com/CP1404/Starter/wiki/Programming-Patterns)
 
 [CP1404 Practicals Instructions](github.com/CP1404/Practicals/)
 
